@@ -26,7 +26,7 @@ def read_tsv():
             if x !=[]:
                 ls.append(x)
     #ls.pop()
-    print(ls)
+   # print(ls)
     train_ls_text=[]
     train_ls_names=[]
     test_ls_text=[]
