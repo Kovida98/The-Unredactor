@@ -151,10 +151,11 @@ Here in this project we will be using python 3.10.2 version. to install that use
 
 `pipenv install --python 3.10.2`
 
-After downloading the project from github, go to that directory using cd.Install pipenv by using
-command. `pip install pipenv`. After that by checking requirements.txt file, you have to install all
-required packages.  you need to install pytest using this command `pipenv install pytest`.Once the installation of pytest is done, you will be able to
-run the unittests using `pipenv run python -m pytest`. 
+After downloading the project from github, go to that directory using cd command.
+Install pipenv by using command `pipenv install`. Create a shell environment
+by using command `pipenv shell`. you need to install pytest using this command
+`pipenv install pytest`. Once the installation of pytest is done, you will be able
+to run the pytest using `pipenv run python -m pytest`. 
 
 you can run the code using
 `pipenv run python unredactor.py`.
