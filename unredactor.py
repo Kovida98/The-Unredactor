@@ -23,8 +23,10 @@ def read_tsv():
         reader = csv.reader(f, delimiter='\t')
         for row in reader:
             x=row
-            ls.append(x)
-    #print(ls)
+            if x !=[]:
+                ls.append(x)
+    #ls.pop()
+    print(ls)
     train_ls_text=[]
     train_ls_names=[]
     test_ls_text=[]
@@ -32,7 +34,7 @@ def read_tsv():
     validation_ls_text=[]
     validation_ls_names=[]
     for j in ls:
-        if j[1]=='training' :
+        if j[1]=='training':
             train_ls_text.append(j[3])
             train_ls_names.append(j[2])
         elif j[1]=='testing':
